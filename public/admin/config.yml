@@ -11,8 +11,9 @@ backend:
 collections:
   - name: "recettes" # Utilisé dans les routes, par exemple, /admin/collections/blog
     label: "Recettes" # Utilisé dans l'UI
-    folder: "src/content/recettes" # Chemin d'accès au dossier dans lequel les documents sont stockés
+    folder: "src/pages/recettes" # Chemin d'accès au dossier dans lequel les documents sont stockés
     create: true # Permettre aux utilisateurs de créer de nouveaux documents dans cette collection
+    slug: "{{title}}"
     fields: # Les champs de chaque document, généralement en tête de page
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Date de publication", name: "date", widget: "datetime" }

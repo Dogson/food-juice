@@ -1,1 +1,41 @@
-@import url(" tailwindcss ");
+@import "tailwindcss";
+
+@font-face {
+  font-family: Coiny;
+  src:
+    url("/fonts/Coiny Regular.woff") format("woff"),
+    url("/fonts/Coiny Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src:
+    url("/fonts/Comfortaa.woff") format("woff"),
+    url("/fonts/Comfortaa.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Antipasto;
+  src: url("/fonts/Antipasto_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-black: #1a1a1a;
+  --color-cinnabar: #d95d39;
+  --color-gambodge: #f0a202;
+  --color-light-blue: #d8abff;
+  --color-indigo: #4e0194;
+  --color-lighter-blue: #e0cbf2;
+  --color-white-green: #d0f4ea;
+  --font-title: "Coiny", sans-serif;
+  --font-default: "Comfortaa", sans-serif;
+  --font-subtitle: "Antipasto", sans-serif;
+}

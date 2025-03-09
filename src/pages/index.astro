@@ -1,11 +1,34 @@
 ---
-import Welcome from "../components/Welcome.astro";
+import { type MarkdownInstance } from "astro";
+import type { RecetteFrontmatter } from "../layouts/RecetteLayout.astro";
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/header/Header.component";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Import all Markdown files from the "recette" folder
+const recettes = Object.entries(
+  import.meta.glob("../pages/recettes/*.md", { eager: true }),
+).map(([path, module]) => {
+  const recette = module as MarkdownInstance<RecetteFrontmatter>;
+
+  return {
+    url: path.replace("../../recette/", "/recette/").replace(".md", ""),
+    frontmatter: recette.frontmatter,
+  };
+});
 ---
 
 <Layout>
-  <Welcome />
-</Layout>
+  <Header />
+  <ul>
+    {
+      recettes.map((recette) => (
+        <li>
+          <a href={recette.url}>
+            <h2>{recette.frontmatter.title}</h2>
+            <p>{recette.frontmatter.date}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul></Layout
+>

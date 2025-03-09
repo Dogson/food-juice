@@ -1,0 +1,20 @@
+---
+import Layout from "./Layout.astro";
+export interface RecetteFrontmatter {
+  title: string;
+  date: string;
+  thumbnail: string;
+}
+
+export interface Props {
+  frontmatter: RecetteFrontmatter;
+}
+const { frontmatter } = Astro.props;
+const { title, date, thumbnail } = frontmatter;
+---
+
+<!doctype html>
+<Layout>
+  <h1>{title}</h1>
+  <slot />
+</Layout>
