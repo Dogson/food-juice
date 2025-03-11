@@ -1,34 +1,31 @@
 ---
 import { type MarkdownInstance } from "astro";
-import type { RecetteFrontmatter } from "../layouts/RecetteLayout.astro";
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/header/Header.component";
+import Header from "../components/Header/Header.component";
+import RecipesList from "../components/RecipesList/RecipesList.component";
+import type { RecipeFrontmatter } from "../models/recipes.types";
+import HomepageLayout from "../layouts/HomepageLayout.astro";
+import SearchBarButton from "../components/SearchBarButton/SearchBarButton.component";
 
 // Import all Markdown files from the "recette" folder
-const recettes = Object.entries(
+const recipes = Object.entries(
   import.meta.glob("../pages/recettes/*.md", { eager: true }),
 ).map(([path, module]) => {
-  const recette = module as MarkdownInstance<RecetteFrontmatter>;
+  const recipe = module as MarkdownInstance<RecipeFrontmatter>;
 
   return {
     url: path.replace("../../recette/", "/recette/").replace(".md", ""),
-    frontmatter: recette.frontmatter,
+    frontmatter: recipe.frontmatter,
   };
 });
 ---
 
 <Layout>
   <Header />
-  <ul>
-    {
-      recettes.map((recette) => (
-        <li>
-          <a href={recette.url}>
-            <h2>{recette.frontmatter.title}</h2>
-            <p>{recette.frontmatter.date}</p>
-          </a>
-        </li>
-      ))
-    }
-  </ul></Layout
->
+  <HomepageLayout>
+    <RecipesList recipes={recipes} />
+    <div class="fixed bottom-0 z-1 flex h-22 w-full items-center px-8 pt-3">
+      <SearchBarButton onClick={() => {}} />
+    </div>
+  </HomepageLayout>
+</Layout>

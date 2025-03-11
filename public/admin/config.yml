@@ -1,13 +1,13 @@
-media_folder: "src/assets/images" # Emplacement où les fichiers seront stockés dans le dépôt
-public_folder: "src/assets/images" # L'attribut src pour les médias téléchargés
+media_folder: "public/assets/images" # Emplacement où les fichiers seront stockés dans le dépôt
+public_folder: "public/assets/images" # L'attribut src pour les médias téléchargés
 backend:
-    name: github
-    repo: Dogson/food-juice # Nom d'utilisateur et dépôt GitHub pour lequel vous souhaitez utiliser Netlify CMS
-    branch: develop # Todo Fixme Changer en master pour la V1
-    commit_messages:
-        create: 'Create {{collection}} “{{slug}}”'
-        update: 'Update {{collection}} “{{slug}}”'
-        delete: 'Delete {{collection}} “{{slug}}”'
+  name: github
+  repo: Dogson/food-juice # Nom d'utilisateur et dépôt GitHub pour lequel vous souhaitez utiliser Netlify CMS
+  branch: develop # Todo Fixme Changer en master pour la V1
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
 collections:
   - name: "recettes" # Utilisé dans les routes, par exemple, /admin/collections/blog
     label: "Recettes" # Utilisé dans l'UI
@@ -16,6 +16,16 @@ collections:
     slug: "{{title}}"
     fields: # Les champs de chaque document, généralement en tête de page
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Date de publication", name: "date", widget: "datetime" }
+      - { label: "Type de plat",
+          name: "type",
+          widget: "select",
+          options: [ 'Apéro', 'Entrée', 'Plat', 'Dessert' ]
+      }
+      - { label: "Végé/Végan",
+          name: "vegan",
+          widget: "select",
+          options: [ 'Végé', 'Végan', 'Non' ],
+          default: 'Non'
+      }
       - { label: "Image", name: "thumbnail", widget: "image" }
       - { label: "Recette", name: "body", widget: "markdown" }

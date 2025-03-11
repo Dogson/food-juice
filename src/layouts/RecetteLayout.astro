@@ -1,13 +1,9 @@
 ---
 import Layout from "./Layout.astro";
-export interface RecetteFrontmatter {
-  title: string;
-  date: string;
-  thumbnail: string;
-}
+import type { RecipeFrontmatter } from "../models/recipes.types";
 
 export interface Props {
-  frontmatter: RecetteFrontmatter;
+  frontmatter: RecipeFrontmatter;
 }
 const { frontmatter } = Astro.props;
 const { title, date, thumbnail } = frontmatter;

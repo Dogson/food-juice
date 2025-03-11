@@ -12,10 +12,8 @@
 
 @font-face {
   font-family: Comfortaa;
-  src:
-    url("/fonts/Comfortaa.woff") format("woff"),
-    url("/fonts/Comfortaa.woff2") format("woff2");
-  font-weight: normal;
+  src: url("/fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -28,6 +26,9 @@
 }
 
 @theme {
+  /*
+    Colors
+   */
   --color-black: #1a1a1a;
   --color-cinnabar: #d95d39;
   --color-gambodge: #f0a202;
@@ -35,7 +36,38 @@
   --color-indigo: #4e0194;
   --color-lighter-blue: #e0cbf2;
   --color-white-green: #d0f4ea;
+
+  /*
+    Tags colors
+   */
+  --color-tag-apero: #e6e6e6;
+  --color-tag-entree: #ee8060;
+  --color-tag-dessert: #d0e562;
+  --color-tag-plat: #00abe7;
+  --color-tag-vege: #f0a202;
+  --color-tag-vegan: #f0a202;
+
+  /* Fonts */
   --font-title: "Coiny", sans-serif;
   --font-default: "Comfortaa", sans-serif;
   --font-subtitle: "Antipasto", sans-serif;
+
+  /**
+  Font size
+   */
+  --text-xxs: 0.625rem;
+
+  /*
+    Shadows
+   */
+  --shadow-md: 4px 4px 4px 0px rgb(0 0 0 / 20%);
+}
+
+html {
+  --recipe-card-size: 120px;
+  --gradient: linear-gradient(
+    to bottom,
+    rgb(26 26 26 / 50%) 80%,
+    rgb(26 26 26 / 0%) 100%
+  );
 }

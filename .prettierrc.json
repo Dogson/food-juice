@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames",
+    "prettier-plugin-merge"
+  ],
+  "tailwindStylesheet": "./src/styles/global.css",
+  "tailwindFunctions": ["classNames"],
+  "customFunctions": ["classNames"],
+  "customAttributes": ["className"],
+  "endingPosition": "absolute-with-indent",
+  "overrides": [
+    {
+      "files": "**/*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
+}
