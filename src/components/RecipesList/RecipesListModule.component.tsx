@@ -30,7 +30,8 @@ const RecipesListModule = ({ recipes }: RecipesListModuleProps) => {
     <>
       <RecipesList recipes={filteredRecipes} />
       <div
-        className="fixed bottom-0 z-1 flex h-22 w-full items-center px-8 pt-3"
+        className="fixed bottom-0 left-[50%] z-1 flex h-22 w-110
+          -translate-x-1/2 transform items-center px-8 pt-3"
       >
         <SearchBarInput onChange={setSearchValue} value={searchValue} />
       </div>

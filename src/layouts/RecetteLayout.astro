@@ -25,21 +25,24 @@ const {
 <!doctype html>
 <Layout title={`Recette ${title} : Miam-Miam`}>
   <Header small />
-  <div class="z-1 m-7 flex flex-col gap-8">
-    <RecipeInfos
-      title={title}
-      description={description}
-      thumbnail={thumbnail}
-      type={type}
-      vegan={vegan}
-    />
-    <RecipeIngredients
-      ingredients={ingredients}
-      portions={portions}
-      client:load
-    />
-    <RecipeSteps steps={steps} />
+  <div class="flex flex-col items-center justify-center gap-4">
+    <div class="z-1 m-7 flex max-w-200 flex-col gap-8">
+      <RecipeInfos
+        title={title}
+        description={description}
+        thumbnail={thumbnail}
+        type={type}
+        vegan={vegan}
+      />
+      <RecipeIngredients
+        ingredients={ingredients}
+        portions={portions}
+        client:load
+      />
+      <RecipeSteps steps={steps} />
+    </div>
   </div>
+
   <div class="absolute top-0 right-0 bottom-0 left-0 bg-white-green"></div>
   <div
     class="absolute top-0 right-0 left-0 h-100 bg-linear-to-b from-light-blue

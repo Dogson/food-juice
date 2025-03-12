@@ -11,9 +11,11 @@ const RecipeSteps = ({ steps }: RecipeStepsProps) => {
       <ol className="flex flex-col gap-3">
         {steps &&
           steps.map((step, index) => (
-            <li key={index} className="flex flex-col">
-              <div className="font-bold">
-                <span className="inline-block w-8">{index + 1}.</span>
+            <li key={index} className="flex flex-col gap-1">
+              <div className="text-md flex text-base/5 font-bold">
+                <span className="inline-block w-8 flex-shrink-0 flex-grow-0">
+                  {index + 1}.
+                </span>
                 <span>{step.description}</span>
               </div>
               <div className="pl-8 text-sm font-thin">{step.details}</div>
