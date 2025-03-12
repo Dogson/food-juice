@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ small }) => {
       className={classNames(
         `duration 200 z-1 flex flex-col justify-center border-b-1
         border-cinnabar bg-gambodge transition ease-in-out`,
-        small ? "px-7 py-5" : "pt-12 pb-8 pl-8",
+        small ? "px-3 py-5" : "pt-12 pb-8 pl-8",
       )}
     >
       <a

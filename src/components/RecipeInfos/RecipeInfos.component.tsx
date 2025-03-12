@@ -22,14 +22,14 @@ const RecipeInfos = ({
   const editPath = `https://miam.gwen.cool/admin/#/collections/recettes/entries/${path.split("/")[2]}`;
 
   return (
-    <div className="flex flex-row gap-5">
+    <div className="flex flex-row flex-wrap gap-5">
       <img
         src={thumbnail}
         alt={title}
         className="h-55 w-55 flex-shrink-0 flex-grow-0 rounded-lg border-2
           border-cinnabar object-cover object-center"
       />
-      <div className="flex flex-col gap-5">
+      <div className="flex max-w-120 flex-col gap-5">
         <div className="mx-1 flex gap-2">
           <RecipeTag bigger value={type} />
           {vegan !== VeganEnum.NO && <RecipeTag bigger value={vegan} />}
