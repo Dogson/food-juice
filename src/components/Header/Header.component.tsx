@@ -14,14 +14,15 @@ const Header: React.FC<HeaderProps> = ({ small }) => {
         small ? "px-7 py-5" : "pt-12 pb-8 pl-8",
       )}
     >
-      <span
+      <a
         className={classNames(
           "duration 200 font-title transition ease-in-out",
           small ? "text-2xl" : "text-5xl",
         )}
+        href={"/"}
       >
         Miam-Miam
-      </span>
+      </a>
       {!small && (
         <span className="font-subtitle text-lg font-semibold text-cinnabar">
           Qu'est-ce qu'on mange ?
