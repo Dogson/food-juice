@@ -1,0 +1,77 @@
+media_folder: "public/assets/images" # Emplacement où les fichiers seront stockés dans le dépôt
+public_folder: "public/assets/images" # L'attribut src pour les médias téléchargés
+
+backend:
+  name: github
+  repo: Dogson/food-juice # Nom d'utilisateur et dépôt GitHub pour lequel vous souhaitez utiliser Netlify CMS
+  branch: master
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+
+collections:
+  - name: "recettes" # Utilisé dans les routes, par exemple, /admin/collections/blog
+    label: "Recettes" # Utilisé dans l'UI
+    folder: "src/pages/recettes" # Chemin d'accès au dossier dans lequel les documents sont stockés
+    create: true # Permettre aux utilisateurs de créer de nouveaux documents dans cette collection
+    slug: "{{title}}"
+    fields: # Les champs de chaque document, généralement en tête de page
+      - label: "Layout"
+        name: "layout"
+        default: "../../layouts/RecetteLayout.astro"
+        widget: "hidden"
+
+      - label: "Titre"
+        name: "title"
+        widget: "string"
+
+      - label: "Description rapide"
+        name: "description"
+        widget: "string"
+        required: false
+
+      - label: "Type de plat"
+        name: "type"
+        widget: "select"
+        options:
+          - "Apéro"
+          - "Entrée"
+          - "Plat"
+          - "Dessert"
+
+      - label: "Végé/Végan"
+        name: "vegan"
+        widget: "select"
+        options:
+          - "Végé"
+          - "Végan"
+          - "Non"
+        default: "Non"
+
+      - label: "Image"
+        name: "thumbnail"
+        widget: "image"
+
+      - label: "Nombre de personnes/portions (à peu près quoi)"
+        name: "portions"
+        widget: "number"
+
+      - label: "Ingrédients"
+        name: "ingredients"
+        widget: "list"
+        fields:
+          - {label: "Nom", name: "name", widget: "string"}
+          - {label: "Quantité", name: "quantity", widget: "number"}
+          - {label: "Unité", name: "unit", widget: "string", required: false}
+
+      - label: "Étape de la recette"
+        name: "steps"
+        widget: "list"
+        fields:
+          - {label: "Description (en une ligne)", name: "description", widget: "string"}
+          - {label: "Détails", name: "details", widget: "string", required: false}
+        default: [
+            {description: "(Exemple) Préchauffer le four à 180°C" },
+            {description: "(Exemple) Faire revenir les oignons", details: "Dans du beurre ou de l'huile d'olive. Saler pendant la cuisson mais ne pas poivrer."},
+        ]

@@ -1,0 +1,20 @@
+---
+import Header from "../components/Header/Header.component";
+import HomepageLayout from "../layouts/HomepageLayout.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page introuvable - Miam-Miam">
+  <Header />
+  <HomepageLayout>
+    <div class="z-1 flex flex-1 flex-col items-center justify-center gap-4">
+      <span class="text-xl">Pas de recette ici 🤔</span>
+      <a
+        href="/"
+        class="rounded-lg border-1 border-white-green bg-gambodge px-3 py-1
+          shadow-md"
+        >Ramène moi à la maison</a
+      >
+    </div>
+  </HomepageLayout>
+</Layout>

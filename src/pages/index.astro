@@ -1,11 +1,26 @@
 ---
-import Welcome from "../components/Welcome.astro";
+import { type MarkdownInstance } from "astro";
 import Layout from "../layouts/Layout.astro";
+import type { RecipeFrontmatter, Recipe } from "../models/recipes.types";
+import HomepageLayout from "../layouts/HomepageLayout.astro";
+import RecipesListModule from "../components/RecipesList/RecipesListModule.component";
+import Header from "../components/Header/Header.component";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const recipes: Recipe[] = Object.entries(
+  import.meta.glob("../pages/recettes/*.md", { eager: true }),
+).map(([path, module]) => {
+  const recipe = module as MarkdownInstance<RecipeFrontmatter>;
+
+  return {
+    url: path.replace("../../recette/", "/recette/").replace(".md", ""),
+    frontmatter: recipe.frontmatter,
+  };
+});
 ---
 
-<Layout>
-  <Welcome />
+<Layout title="Les recettes Miam-Miam">
+  <Header />
+  <HomepageLayout>
+    <RecipesListModule client:load recipes={recipes} />
+  </HomepageLayout>
 </Layout>

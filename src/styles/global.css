@@ -1,1 +1,117 @@
-@import url(" tailwindcss ");
+@import "tailwindcss";
+
+html {
+  --recipe-card-size: 120px;
+  --color-black: #1a1a1a;
+  --color-cinnabar: #d95d39;
+  --color-gambodge: #f0a202;
+  --color-light-blue: #d8abff;
+  --color-indigo: #4e0194;
+  --color-lighter-blue: #e0cbf2;
+  --color-white-green: #d0f4ea;
+  --gradient: linear-gradient(
+    to bottom,
+    rgb(26 26 26 / 50%) 80%,
+    rgb(26 26 26 / 0%) 100%
+  );
+}
+
+@font-face {
+  font-family: Coiny;
+  src:
+    url("/fonts/Coiny Regular.woff") format("woff"),
+    url("/fonts/Coiny Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("/fonts/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("/fonts/Comfortaa-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("/fonts/Comfortaa-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("/fonts/Comfortaa-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("/fonts/Comfortaa-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@theme {
+  /*
+    Colors
+   */
+  --color-black: var(--color-black);
+  --color-cinnabar: var(--color-cinnabar);
+  --color-grey-disabled: #b2adad;
+  --color-gambodge: var(--color-gambodge);
+  --color-light-blue: var(--color-light-blue);
+  --color-indigo: var(--color-indigo);
+  --color-lighter-blue: var(--color-lighter-blue);
+  --color-white-green: var(--color-white-green);
+
+  /*
+    Tags colors
+   */
+  --color-tag-apero: #e6e6e6;
+  --color-tag-entree: #ee8060;
+  --color-tag-dessert: #d0e562;
+  --color-tag-plat: #00abe7;
+  --color-tag-vege: #f0a202;
+  --color-tag-vegan: #f0a202;
+
+  /* Fonts */
+  --font-title: "Coiny", sans-serif;
+  --font-default: "Comfortaa", sans-serif;
+  --font-subtitle: "Nunito", sans-serif;
+
+  /**
+  Font size
+   */
+  --text-xxs: 0.625rem;
+
+  /*
+    Shadows
+   */
+  --shadow-md: 4px 4px 4px 0px rgb(0 0 0 / 20%);
+}
+
+button {
+  cursor: pointer;
+}
