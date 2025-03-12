@@ -1,14 +1,12 @@
 ---
 import { type MarkdownInstance } from "astro";
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header/Header.component";
-import RecipesList from "../components/RecipesList/RecipesList.component";
-import type { RecipeFrontmatter } from "../models/recipes.types";
+import type { RecipeFrontmatter, Recipe } from "../models/recipes.types";
 import HomepageLayout from "../layouts/HomepageLayout.astro";
-import SearchBarButton from "../components/SearchBarButton/SearchBarButton.component";
+import RecipesListModule from "../components/RecipesList/RecipesListModule.component";
+import Header from "../components/Header/Header.component";
 
-// Import all Markdown files from the "recette" folder
-const recipes = Object.entries(
+const recipes: Recipe[] = Object.entries(
   import.meta.glob("../pages/recettes/*.md", { eager: true }),
 ).map(([path, module]) => {
   const recipe = module as MarkdownInstance<RecipeFrontmatter>;
@@ -23,9 +21,6 @@ const recipes = Object.entries(
 <Layout>
   <Header />
   <HomepageLayout>
-    <RecipesList recipes={recipes} />
-    <div class="fixed bottom-0 z-1 flex h-22 w-full items-center px-8 pt-3">
-      <SearchBarButton onClick={() => {}} />
-    </div>
+    <RecipesListModule client:load recipes={recipes} />
   </HomepageLayout>
 </Layout>

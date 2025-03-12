@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 
 export type HeaderProps = {
@@ -6,6 +6,12 @@ export type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = ({ small }) => {
+  const [hello, setHello] = useState(false);
+
+  useEffect(() => {
+    console.log("heklo");
+  }, []);
+
   return (
     <div
       className={classNames(

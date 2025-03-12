@@ -1,18 +1,15 @@
 import type { Recipe } from "../../models/recipes.types.ts";
 import RecipeItem from "./RecipeItem.component.tsx";
-import React, { useEffect } from "react";
-import { Debug } from "astro/components";
+import React from "react";
 
 export type RecipesListProps = {
   recipes: Recipe[];
 };
 
 const RecipesList: React.FC<RecipesListProps> = ({ recipes }) => {
-  console.log(recipes);
-
   return (
     <div
-      className="grid grid-cols-[repeat(auto-fit,var(--recipe-card-size))]
+      className="mb-20 grid grid-cols-[repeat(auto-fit,var(--recipe-card-size))]
         justify-center gap-5"
     >
       {recipes.map((recipe) => (

@@ -6,10 +6,14 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-
+  integrations: [
+    react({
+      include: ["**/components/**/*"],
+      experimentalReactChildren: true,
+      experimentalDisableStreaming: true,
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
-    server: { watch: { usePolling: true } },
   },
 });

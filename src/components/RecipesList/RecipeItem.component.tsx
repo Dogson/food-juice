@@ -26,7 +26,7 @@ const RecipeItem: React.FC<RecipeItemProps> = ({
     >
       <div
         className="absolute z-1 flex h-full w-full flex-col-reverse
-          bg-transparent px-2 py-1"
+          bg-transparent px-3 py-2"
       >
         <div
           className="absolute top-1 right-1 left-1 flex flex-wrap justify-end

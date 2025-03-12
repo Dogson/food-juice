@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+html {
+  --recipe-card-size: 120px;
+  --color-black: #1a1a1a;
+  --color-cinnabar: #d95d39;
+  --color-gambodge: #f0a202;
+  --color-light-blue: #d8abff;
+  --color-indigo: #4e0194;
+  --color-lighter-blue: #e0cbf2;
+  --color-white-green: #d0f4ea;
+  --gradient: linear-gradient(
+    to bottom,
+    rgb(26 26 26 / 50%) 80%,
+    rgb(26 26 26 / 0%) 100%
+  );
+}
+
 @font-face {
   font-family: Coiny;
   src:
@@ -29,13 +45,13 @@
   /*
     Colors
    */
-  --color-black: #1a1a1a;
-  --color-cinnabar: #d95d39;
-  --color-gambodge: #f0a202;
-  --color-light-blue: #d8abff;
-  --color-indigo: #4e0194;
-  --color-lighter-blue: #e0cbf2;
-  --color-white-green: #d0f4ea;
+  --color-black: var(--color-black);
+  --color-cinnabar: var(--color-cinnabar);
+  --color-gambodge: var(--color-gambodge);
+  --color-light-blue: var(--color-light-blue);
+  --color-indigo: var(--color-indigo);
+  --color-lighter-blue: var(--color-lighter-blue);
+  --color-white-green: var(--color-white-green);
 
   /*
     Tags colors
@@ -61,13 +77,4 @@
     Shadows
    */
   --shadow-md: 4px 4px 4px 0px rgb(0 0 0 / 20%);
-}
-
-html {
-  --recipe-card-size: 120px;
-  --gradient: linear-gradient(
-    to bottom,
-    rgb(26 26 26 / 50%) 80%,
-    rgb(26 26 26 / 0%) 100%
-  );
 }
