@@ -5,9 +5,10 @@ import classNames from "classnames";
 
 type RecipeTagProps = {
   value: RecipeTypeEnum | VeganEnum;
+  bigger?: boolean;
 };
 
-const RecipeTag: React.FC<RecipeTagProps> = ({ value }) => {
+const RecipeTag: React.FC<RecipeTagProps> = ({ value, bigger = false }) => {
   const bgColor = useMemo(() => {
     switch (value) {
       case RecipeTypeEnum.APERO:
@@ -39,12 +40,21 @@ const RecipeTag: React.FC<RecipeTagProps> = ({ value }) => {
   return (
     <div
       className={classNames(
-        `weight flex h-4 items-center gap-1 rounded-full px-2 text-xxs
-        leading-none font-medium`,
+        `weight flex items-center gap-1 rounded-full px-2 leading-none
+        font-medium`,
         bgColor,
+        { "h-4 text-xxs": !bigger },
+        { "h-5 text-sm": bigger },
       )}
     >
-      {Icon && <Icon className="h-3 stroke-black" />}
+      {Icon && (
+        <Icon
+          className={classNames("stroke-black", {
+            "h-3": !bigger,
+            "h-4": bigger,
+          })}
+        />
+      )}
       {value}
     </div>
   );
