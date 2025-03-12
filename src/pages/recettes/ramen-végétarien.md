@@ -6,6 +6,7 @@ description: Un vrai challenge à préparer, demande beaucoup de temps et
 type: Plat
 vegan: Végé
 thumbnail: https://images.prismic.io/nahrin/38ec7ff6-df84-424b-9628-addc3f6b9e37_miso-ramen-rezept-mit-poulet-oder-tofu.jpg?auto=compress,format
+portions: 4
 ingredients:
   - name: Oeufs
     quantity: 2
