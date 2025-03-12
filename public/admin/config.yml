@@ -2,7 +2,7 @@ media_folder: "public/assets/images" # Emplacement où les fichiers seront stock
 public_folder: "public/assets/images" # L'attribut src pour les médias téléchargés
 
 backend:
-  name: github
+  name: git-gateway
   repo: Dogson/food-juice # Nom d'utilisateur et dépôt GitHub pour lequel vous souhaitez utiliser Netlify CMS
   branch: master
   commit_messages:
