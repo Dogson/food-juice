@@ -35,5 +35,5 @@ export enum RecipeTypeEnum {
 export enum VeganEnum {
   VEGAN = "Végan",
   VEGETARIAN = "Végé",
-  NO = "No",
+  NO = "Non",
 }

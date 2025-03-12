@@ -16,8 +16,6 @@ const RecipeInfos = ({
   vegan,
   thumbnail,
 }: RecipeInfosProps) => {
-  console.log(thumbnail);
-
   return (
     <div className="flex flex-row gap-5">
       <img
@@ -29,7 +27,7 @@ const RecipeInfos = ({
       <div className="flex flex-col gap-5">
         <div className="mx-1 flex gap-2">
           <RecipeTag value={type} />
-          <RecipeTag value={vegan} />
+          {vegan !== VeganEnum.NO && <RecipeTag value={vegan} />}
         </div>
         <span className="mx-1 font-subtitle text-3xl">{title}</span>
         <span className="mx-1 text-sm opacity-50">{description}</span>
