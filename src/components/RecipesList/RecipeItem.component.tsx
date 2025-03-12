@@ -41,7 +41,7 @@ const RecipeItem: React.FC<RecipeItemProps> = ({
         style={{
           overflowClipMargin: "unset",
         }}
-        className="absolute h-full w-full object-cover"
+        className="absolute h-full w-full object-cover object-center"
         src={image}
         alt={`Photo de la recette de ${title}`}
       />

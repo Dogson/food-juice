@@ -3,24 +3,31 @@ import Layout from "./Layout.astro";
 import type { RecipeFrontmatter } from "../models/recipes.types";
 import Header from "../components/Header/Header.component";
 import RecipeInfos from "../components/RecipeInfos/RecipeInfos.component";
+import RecipeIngredients from "../components/RecipeIngredients/RecipeIngredients.component";
 
 export interface Props {
   frontmatter: RecipeFrontmatter;
 }
 const { frontmatter } = Astro.props;
-const { title, thumbnail, type, vegan, description } = frontmatter;
+const { title, thumbnail, type, vegan, description, ingredients, portions } =
+  frontmatter;
 ---
 
 <!doctype html>
 <Layout>
   <Header small />
-  <div class="z-1 m-7">
+  <div class="z-1 m-7 flex flex-col gap-8">
     <RecipeInfos
       title={title}
       description={description}
       thumbnail={thumbnail}
       type={type}
       vegan={vegan}
+    />
+    <RecipeIngredients
+      ingredients={ingredients}
+      portions={portions}
+      client:load
     />
   </div>
 

@@ -1,9 +1,17 @@
+export type RecipeIngredient = {
+  name: string;
+  quantity: number;
+  unit?: string;
+};
+
 export type RecipeFrontmatter = {
   title: string;
   description: string;
   thumbnail: string;
   type: RecipeTypeEnum;
   vegan: VeganEnum;
+  ingredients: RecipeIngredient[];
+  portions: number;
 };
 
 export type Recipe = {

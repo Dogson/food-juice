@@ -16,6 +16,8 @@ const RecipeTag: React.FC<RecipeTagProps> = ({ value }) => {
         return "bg-tag-entree";
       case RecipeTypeEnum.PLAT:
         return "bg-tag-plat";
+      case RecipeTypeEnum.DESSERT:
+        return "bg-tag-dessert";
       case VeganEnum.VEGAN:
         return "bg-tag-vegan";
       case VeganEnum.VEGETARIAN:

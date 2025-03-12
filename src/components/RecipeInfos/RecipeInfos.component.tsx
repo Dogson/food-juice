@@ -23,7 +23,8 @@ const RecipeInfos = ({
       <img
         src={thumbnail}
         alt={title}
-        className="h-55 w-55 rounded-lg border-2 border-cinnabar"
+        className="h-55 w-55 rounded-lg border-2 border-cinnabar object-cover
+          object-center"
       />
       <span className="mx-1 font-subtitle text-3xl">{title}</span>
       <span className="mx-1 text-sm opacity-50">{description}</span>
