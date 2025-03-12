@@ -35,9 +35,7 @@ const RecipeItem: React.FC<RecipeItemProps> = ({
           {type && <RecipeTag value={type} />}
           {vegan && vegan !== VeganEnum.NO && <RecipeTag value={vegan} />}
         </div>
-        <span className="font-title text-sm/4 tracking-tight text-black">
-          {title}
-        </span>
+        <span className="font-subtitle text-sm/4 text-black">{title}</span>
       </div>
       <img
         style={{

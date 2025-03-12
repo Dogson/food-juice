@@ -1,6 +1,6 @@
 export type RecipeFrontmatter = {
   title: string;
-  date: string;
+  description: string;
   thumbnail: string;
   type: RecipeTypeEnum;
   vegan: VeganEnum;

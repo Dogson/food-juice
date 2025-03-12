@@ -15,7 +15,9 @@ collections:
     create: true # Permettre aux utilisateurs de créer de nouveaux documents dans cette collection
     slug: "{{title}}"
     fields: # Les champs de chaque document, généralement en tête de page
+      - { label: "Layout", name: "layout", value: "../../layouts/RecetteLayout.astro", type: "hidden"}
       - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Description rapide (optionnel)", name: "description", widget: "string", required: false },
       - { label: "Type de plat",
           name: "type",
           widget: "select",
