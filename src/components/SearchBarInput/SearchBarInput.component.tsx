@@ -21,13 +21,15 @@ const SearchBarInput: React.FC<SearchBarInputProps> = ({ value, onChange }) => {
         onChange={(e) => onChange(e.target.value)}
         placeholder="Rechercher une recette"
       />
-      <button onClick={() => onChange("")}>
-        <Icon
-          icon={<IoCloseCircleOutline />}
-          color="var(--color-gambodge)"
-          size="1.3em"
-        />
-      </button>
+      {value && (
+        <button onClick={() => onChange("")}>
+          <Icon
+            icon={<IoCloseCircleOutline />}
+            color="var(--color-gambodge)"
+            size="1.3em"
+          />
+        </button>
+      )}
     </div>
   );
 };
