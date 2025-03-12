@@ -15,5 +15,10 @@ ingredients:
     unit: bouquets
   - name: Oeuf
     quantity: 1
+recipeSteps:
+  - description: Préchauffer le four à 180°C
+  - description: Faire revenir les oignons
+    details: Miam miam les oignons, dans du beurre bien sur, et pas oublier de saler
+      c'est trop bon en vrai
 ---
 C tre trebon
