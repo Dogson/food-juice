@@ -86,8 +86,10 @@ const RecipeIngredients = ({
                   onChange={() => handleToggleIngredientSelection(idx)}
                 />
               </span>
-              <span className="text-xs/5 opacity-90">{ingredient.name}</span>
-              <span className="text-lg/5 font-bold">
+              <span className="pr-3 text-xs/5 opacity-90">
+                {ingredient.name}
+              </span>
+              <span className="text-base/5 font-bold">
                 {computeNewQuantity(ingredient.quantity)} {ingredient.unit}
               </span>
             </button>

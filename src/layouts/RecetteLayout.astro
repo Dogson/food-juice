@@ -4,13 +4,22 @@ import type { RecipeFrontmatter } from "../models/recipes.types";
 import Header from "../components/Header/Header.component";
 import RecipeInfos from "../components/RecipeInfos/RecipeInfos.component";
 import RecipeIngredients from "../components/RecipeIngredients/RecipeIngredients.component";
+import RecipeSteps from "../components/RecipeSteps/RecipeSteps.component";
 
 export interface Props {
   frontmatter: RecipeFrontmatter;
 }
 const { frontmatter } = Astro.props;
-const { title, thumbnail, type, vegan, description, ingredients, portions } =
-  frontmatter;
+const {
+  title,
+  thumbnail,
+  type,
+  vegan,
+  description,
+  ingredients,
+  portions,
+  steps,
+} = frontmatter;
 ---
 
 <!doctype html>
@@ -29,13 +38,15 @@ const { title, thumbnail, type, vegan, description, ingredients, portions } =
       portions={portions}
       client:load
     />
+    <RecipeSteps steps={steps} />
   </div>
-
-  <div class="absolute top-0 right-0 bottom-0 left-0 bg-white-green"></div>
-  <div
-    class="absolute top-0 right-0 left-0 h-100 bg-linear-to-b from-light-blue
-      to-white-green"
-  >
-  </div>
-  <slot />
-</Layout>
+  <div>
+    <div class="absolute top-0 right-0 bottom-0 left-0 bg-white-green"></div>
+    <div
+      class="absolute top-0 right-0 left-0 h-100 bg-linear-to-b from-light-blue
+        to-white-green"
+    >
+    </div>
+    <slot />
+  </div></Layout
+>

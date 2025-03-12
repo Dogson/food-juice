@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ small }) => {
           small ? "text-2xl" : "text-5xl",
         )}
       >
-        Miam
+        Miam-Miam
       </span>
       {!small && (
         <span className="font-subtitle text-lg font-semibold text-cinnabar">

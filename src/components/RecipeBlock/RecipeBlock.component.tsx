@@ -8,7 +8,7 @@ type RecipeBlockProps = {
 const RecipeBlock = ({ label, children }: RecipeBlockProps) => {
   return (
     <div className="flex flex-col gap-4">
-      <span className="font-title text-xl underline">{label}</span>
+      <span className="font-title text-2xl underline">{label}</span>
       <div>{children}</div>
     </div>
   );
