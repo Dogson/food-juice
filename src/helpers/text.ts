@@ -5,3 +5,7 @@ export const sanitizeString = (str: string): string => {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
 };
+
+export const getWordsFromString = (str: string): string[] => {
+  return str.split(" ");
+};
