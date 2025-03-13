@@ -5,9 +5,9 @@ description: Un bouillon crémeux, intense et si riche. Une galère incroyable �
   réaliser, demande énormément de temps, mais le résultat est à la hauteur de
   l'effort.
 type: Plat
-vegan: Non
+vegan: Végan
 thumbnail: https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2024-03-tonkotsu-ramen%2Ftonkotsu-ramen-195
-portions: 4
+portions: 8
 ingredients:
   - name: Os de porc (fémurs)
     quantity: 1000
