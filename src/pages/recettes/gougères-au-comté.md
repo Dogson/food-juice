@@ -39,6 +39,7 @@ steps:
     details: Mélanger entre chaque nouvel oeuf, jusqu'à obtenir un mélange bien
       homogène (ça demande un peu d'huile de coude)
   - description: Ajouter le compté rapé et mélanger
+  - description: Ajouter du poivre et de la muscade
   - description: Beurrer une plaque de four
     details: ""
   - description: Faire des boules et les disposer sur la plaque
