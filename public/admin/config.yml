@@ -2,7 +2,8 @@ media_folder: "public/assets/images" # Emplacement où les fichiers seront stock
 public_folder: "public/assets/images" # L'attribut src pour les médias téléchargés
 
 logo_url: '/admin/logo.png'
-display_url: https://miam.gwen.cool
+site_url: 'https://miam.gwen.cool'
+display_url: 'https://miam.gwen.cool'
 locale: 'fr'
 
 backend:

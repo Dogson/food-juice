@@ -48,10 +48,17 @@ const RecipesListModule = ({ recipes }: RecipesListModuleProps) => {
     <>
       <RecipesList recipes={filteredRecipes} />
       <div
-        className="fixed bottom-0 left-[50%] z-1 flex h-22 w-110
-          -translate-x-1/2 transform items-center px-8 pt-3"
+        className="fixed bottom-0 left-[50%] z-1 flex h-22 w-full max-w-110
+          -translate-x-1/2 transform items-center gap-3 px-3 pt-3"
       >
         <SearchBarInput onChange={setSearchValue} value={searchValue} />
+        <a
+          className="flex h-9 w-9 items-center justify-center rounded-full
+            bg-gambodge text-2xl shadow-md"
+          href={"/admin/#/collections/recettes/new"}
+        >
+          +
+        </a>
       </div>
     </>
   );

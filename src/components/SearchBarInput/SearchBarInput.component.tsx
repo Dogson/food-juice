@@ -11,7 +11,7 @@ type SearchBarInputProps = {
 const SearchBarInput: React.FC<SearchBarInputProps> = ({ value, onChange }) => {
   return (
     <div
-      className="flex h-9 w-full items-center gap-3 rounded-full bg-white px-3
+      className="flex h-9 flex-1 items-center gap-3 rounded-full bg-white px-3
         shadow-md"
     >
       <SearchIcon className="h-5 w-5 stroke-gambodge" />
