@@ -44,7 +44,7 @@ steps:
     details: ""
   - description: Faire des boules et les disposer sur la plaque
     details: A l'aide deux cuillères, faire des boules (ni trop grosses, ni trop
-      petites, environ 7cm), et disposer les sur la plaque de cuisson en
+      petites, environ 7cm), et les disposer sur la plaque de cuisson en
       laissant des espaces entre les boules.
   - description: Enfourner et cuire pendant 25mn
     details: Ne JAMAIS JAMAIS ouvrir pendant la cuisson. Quand ça gonfle et que
