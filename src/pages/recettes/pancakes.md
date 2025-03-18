@@ -43,10 +43,13 @@ steps:
   - description: Monter les blancs en neige
     details: Battez les blancs en neige et incorporez-les délicatement à la pâte. Si
       tu en as une grande quantité, incorpore les en deux ou trois fois.
-  - description: Cuisson des pancakes
-    details: Faites cuire dans une poêle beurrée bien chaude, à feu doux/moyen,
-      environ 1 minute de chaque côté.
+  - description: Faire chauffer la poêle
+    details: Faire fondre du beurre dans une poêle bien chaude, à feu doux/moyen.
+  - description: Déposer une petite louche de pâte au centre de la poêle
+    details: Laisser la pâte s'étaler tout seule, ne pas l'étaler avec une spatule
+      comme on ferait avec une crêpe !
   - description: Vérification de la cuisson
     details: Lorsque des petites bulles se forment à la surface et que les bords
-      sont dorés, retournez le pancake.
+      sont dorés, retournez le pancake. Laisser cuire encore une petite minute,
+      et c'est prêt !
 ---
