@@ -68,7 +68,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Nom", name: "name", widget: "string"}
-          - {label: "Quantité", name: "quantity", widget: "number"}
+          - {label: "Quantité", name: "quantity", widget: "number", required: false}
           - {label: "Unité", name: "unit", widget: "string", required: false}
 
       - label: "Étape de la recette"
