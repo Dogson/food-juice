@@ -4,7 +4,7 @@ title: Piperade basque d'Amani
 description: Ratatouille traditionnelle du pays basque
 type: Plat
 vegan: Végé
-thumbnail: https://images.app.goo.gl/sCiXpnE1v6z3deUG8
+thumbnail: https://wordpress.potagercity.fr/wp-content/uploads/2019/01/Piperade-aux-piments.jpg
 portions: 4
 ingredients:
   - name: Piments vert long Italiens (non piquants)
