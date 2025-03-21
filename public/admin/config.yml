@@ -29,6 +29,11 @@ collections:
         default: "../../layouts/RecetteLayout.astro"
         widget: "hidden"
 
+      - label: "Creation Date"
+        name: "createdAt"
+        widget: "datetime"
+        default: "{{now}}"
+
       - label: "Titre"
         name: "title"
         widget: "string"
