@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/RecetteLayout.astro
+createdAt: 2025-03-21T10:24:00.000Z
 title: Bouillon tonkotsu pour ramen
 description: Un bouillon crémeux, intense et si riche. Une galère incroyable à
   réaliser, demande énormément de temps, mais le résultat est à la hauteur de
