@@ -13,7 +13,7 @@ ingredients:
   - name: "Oignon blanc moyen "
     quantity: 2
   - name: "Ail "
-  - name: "Tomate (fraîche ou en boîte : pelée ou concassées)"
+  - name: "Tomates (fraîches ou en boîte : pelées ou concassées)"
     quantity: 4
   - name: Mie de pain
   - name: Lait
