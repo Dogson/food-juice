@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/RecetteLayout.astro
+createdAt: 2025-03-20T10:24:00.000Z
 title: Gougères au comté
 description: Pas d'épinards, pas de risque de les laisser sur le feu.
 type: Apéro
