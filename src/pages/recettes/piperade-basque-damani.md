@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/RecetteLayout.astro
+createdAt: 2025-03-21T10:25:00.000Z
 title: Piperade basque d'Amani
 description: Ratatouille traditionnelle du pays basque
 type: Plat
