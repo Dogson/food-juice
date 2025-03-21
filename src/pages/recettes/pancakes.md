@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/RecetteLayout.astro
+createdAt: 2025-03-19T10:25:00.000Z
 title: Pancakes
 description: Des pancakes bien moelleux et aériens. Enlever le sucre, et ça fait
   des supers blinis !
