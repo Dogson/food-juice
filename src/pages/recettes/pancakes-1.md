@@ -9,7 +9,7 @@ thumbnail: public/assets/images/1000019111.jpg
 portions: 12
 ingredients:
   - name: "Yaourt végétal "
-    quantity: 208
+    quantity: 200
     unit: g
   - name: sucre
     quantity: 1
