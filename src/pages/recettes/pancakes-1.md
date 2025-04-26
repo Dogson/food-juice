@@ -21,7 +21,7 @@ ingredients:
     quantity: 240
     unit: g
   - name: eau
-    quantity: ""
+    quantity: 16
     unit: cl
   - name: levure chimique
     quantity: 1
