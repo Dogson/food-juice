@@ -5,7 +5,7 @@ title: Pancakes Végans
 description: Les pancakes végans de Healthy Lalou
 type: Dessert
 vegan: Végan
-thumbnail: public/assets/images/img_5203.webp
+thumbnail: https://i0.wp.com/healthylalou.fr/wp-content/uploads/2019/05/IMG_5203.jpg?resize=1140%2C1140&ssl=1
 portions: 12
 ingredients:
   - name: "Yaourt végétal "
