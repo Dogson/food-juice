@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/RecetteLayout.astro
 createdAt: 2025-04-26T11:32:00.000Z
-title: Pancakes
-description: pancakes vegan de Healthy Lalou
+title: Pancakes Végans
+description: Les pancakes végans de Healthy Lalou
 type: Dessert
 vegan: Végan
-thumbnail: public/assets/images/1000019111.jpg
+thumbnail: public/assets/images/img_5203.webp
 portions: 12
 ingredients:
   - name: "Yaourt végétal "
@@ -33,6 +33,6 @@ ingredients:
 steps:
   - description: "Mélanger le yaourt, le sucre et l'huile "
   - description: "Ajouter la farine puis l'eau en mélangeant "
-  - description: "ajouter la levure, le sel et la fleur d'oranger "
-    details: "mélanger à nouveau "
+  - description: "Ajouter la levure, le sel et la fleur d'oranger "
+    details: "Mélanger à nouveau "
 ---
