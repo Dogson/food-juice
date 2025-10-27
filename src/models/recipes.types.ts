@@ -18,6 +18,7 @@ export type RecipeFrontmatter = {
   ingredients: RecipeIngredient[];
   portions: number;
   steps: RecipeStep[];
+  createdAt: string;
 };
 
 export type Recipe = {

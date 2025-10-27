@@ -35,6 +35,9 @@ const RecipeIngredients = ({
   };
 
   const computeNewQuantity = (quantity: number, unit?: string) => {
+    if (quantity === undefined) {
+      return "";
+    }
     const newQuantity = (quantity * newPortions) / portions;
 
     return unit ? newQuantity.toFixed(2) : Math.max(Math.round(newQuantity), 1);
@@ -86,12 +89,14 @@ const RecipeIngredients = ({
                   onChange={() => handleToggleIngredientSelection(idx)}
                 />
               </span>
-              <span className="pr-3 text-xs/5 opacity-90">
+              <span className="pr-3 text-xs/5 font-semibold">
                 {ingredient.name}
               </span>
-              <span className="text-base/5 font-bold">
-                {computeNewQuantity(ingredient.quantity)} {ingredient.unit}
-              </span>
+              {
+                <span className="text-base/5 font-bold">
+                  {computeNewQuantity(ingredient.quantity)} {ingredient.unit}
+                </span>
+              }
             </button>
           ))}
         </div>

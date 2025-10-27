@@ -8,14 +8,18 @@ import Header from "../components/Header/Header.component";
 
 const recipes: Recipe[] = Object.entries(
   import.meta.glob("../pages/recettes/*.md", { eager: true }),
-).map(([path, module]) => {
-  const recipe = module as MarkdownInstance<RecipeFrontmatter>;
+)
+  .map(([path, module]) => {
+    const recipe = module as MarkdownInstance<RecipeFrontmatter>;
 
-  return {
-    url: path.replace("../../recette/", "/recette/").replace(".md", ""),
-    frontmatter: recipe.frontmatter,
-  };
-});
+    return {
+      url: path.replace("../../recette/", "/recette/").replace(".md", ""),
+      frontmatter: recipe.frontmatter,
+    };
+  })
+  .sort((recipeA, recipeB) =>
+    recipeA.frontmatter.createdAt > recipeB.frontmatter.createdAt ? -1 : 1,
+  );
 ---
 
 <Layout title="Les recettes Miam-Miam">

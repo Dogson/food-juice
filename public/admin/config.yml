@@ -2,7 +2,8 @@ media_folder: "public/assets/images" # Emplacement où les fichiers seront stock
 public_folder: "public/assets/images" # L'attribut src pour les médias téléchargés
 
 logo_url: '/admin/logo.png'
-display_url: https://miam.gwen.cool
+site_url: 'https://miam.gwen.cool'
+display_url: 'https://miam.gwen.cool'
 locale: 'fr'
 
 backend:
@@ -27,6 +28,11 @@ collections:
         name: "layout"
         default: "../../layouts/RecetteLayout.astro"
         widget: "hidden"
+
+      - label: "Creation Date"
+        name: "createdAt"
+        widget: "datetime"
+        default: "{{now}}"
 
       - label: "Titre"
         name: "title"
@@ -68,7 +74,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Nom", name: "name", widget: "string"}
-          - {label: "Quantité", name: "quantity", widget: "number"}
+          - {label: "Quantité", name: "quantity", widget: "number", required: false}
           - {label: "Unité", name: "unit", widget: "string", required: false}
 
       - label: "Étape de la recette"
