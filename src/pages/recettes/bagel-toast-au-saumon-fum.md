@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: ../../layouts/RecetteLayout.astro
 createdAt: "2025-03-19T10:25:00.000Z"
@@ -32,4 +31,3 @@ steps:
   - description: Bon appétit !
     details: Bon appétit !
 ---
-```

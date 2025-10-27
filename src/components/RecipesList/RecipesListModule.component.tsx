@@ -13,6 +13,8 @@ const RecipesListModule = ({ recipes }: RecipesListModuleProps) => {
   const [searchValue, setSearchValue] = useState("");
 
   const handleFilterRecipe = (value: string) => {
+    if (!value) return;
+    console.log(value);
     const searchWords = getWordsFromString(value);
 
     const filteredRecipes = recipes.filter((recipe) => {
