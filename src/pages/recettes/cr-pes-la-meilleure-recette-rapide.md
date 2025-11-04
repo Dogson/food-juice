@@ -1,4 +1,4 @@
-```markdown
+---  
 layout: ../../layouts/RecetteLayout.astro
 createdAt: "2025-11-04T00:00:00.000Z"
 title: "Crêpes : la meilleure recette rapide"
@@ -41,4 +41,4 @@ steps:
     details: Laissez cuire environ une minute de ce côté et la crêpe est prête.
   - description: Répétez
     details: Répétez jusqu'à épuisement de la pâte.
-```
+---  
