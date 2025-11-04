@@ -5,7 +5,7 @@ title: "Crêpes : la meilleure recette rapide"
 description: Découvrez cette recette facile de crêpes, très rapide à préparer. Une recette simple qui, grâce à sa quantité d'œufs, ne nécessite aucun repos de la pâte (vous pouvez adapter le volume des ingrédients selon le nombre d'œufs que vous avez, les crêpes seront aussi parfaites avec 1 œuf, ou 2 œufs). À préparer à la Chandeleur, pour un brunch ou à tout moment que l'envie vous prend.
 type: Crêpe
 vegan: Non
-thumbnail: "https://img-3.journaldesfemmes.fr/XsGlUw-EdzHu1Y6COt/750x500/30dfaa9e5a3a4e2891de60d077feec7f/ccmcms-jdf/39908662.jpg"
+thumbnail: "https://img.lemde.fr/2022/02/10/145/184/1183/788/664/0/75/0/711057b_169085-3259764.jpg"
 portions: 4
 ingredients:
   - name: Farine
