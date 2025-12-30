@@ -1,11 +1,11 @@
----  
+---
 layout: ../../layouts/RecetteLayout.astro
-createdAt: "2025-11-04T00:00:00.000Z"
-title: "Pâte à crêpe sucrée"
+createdAt: 2025-11-04T00:00:00.000Z
+title: Pâte à crêpe sucrée
 description: Vous avez d'la pâte ? Vous avez du suc' ?
 type: Crêpe
 vegan: Végé
-thumbnail: "https://img.lemde.fr/2022/02/10/145/184/1183/788/664/0/75/0/711057b_169085-3259764.jpg"
+thumbnail: https://img.lemde.fr/2022/02/10/145/184/1183/788/664/0/75/0/711057b_169085-3259764.jpg
 portions: 4
 ingredients:
   - name: Farine
@@ -15,8 +15,8 @@ ingredients:
     quantity: 4
     unit: ""
   - name: Lait
-    quantity: 0.5
-    unit: litres
+    quantity: 500
+    unit: mL
   - name: Sel
     quantity: 0.5
     unit: pincée
@@ -32,5 +32,7 @@ steps:
   - description: Commencez à mélanger doucement.
     details: Quand le mélange devient épais, ajoutez le lait froid petit à petit.
   - description: Ajoutez le lait et le beurre fondu.
-    details: Quand tout le lait est mélangé, la pâte doit être assez fluide. Si elle vous paraît trop épaisse, rajoutez un peu de lait. Ajoutez ensuite le beurre fondu refroidi, mélangez bien.
----  
+    details: Quand tout le lait est mélangé, la pâte doit être assez fluide. Si elle
+      vous paraît trop épaisse, rajoutez un peu de lait. Ajoutez ensuite le
+      beurre fondu refroidi, mélangez bien.
+---
