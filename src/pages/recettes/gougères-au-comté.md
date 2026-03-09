@@ -15,7 +15,7 @@ ingredients:
     quantity: 150
     unit: g
   - name: Comté (rapé)
-    quantity: 150
+    quantity: 300
     unit: g
   - name: Eau
     quantity: 50
