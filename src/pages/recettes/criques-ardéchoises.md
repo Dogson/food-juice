@@ -2,6 +2,7 @@
 layout: ../../layouts/RecetteLayout.astro
 createdAt: 2026-03-09T18:31:00.000+01:00
 title: Criques Ardéchoises
+description: les ptites criques de notre enfance oui oui
 type: Plat
 vegan: Végé
 thumbnail: https://www.repassansgluten.com/wp-content/uploads/2025/12/crique-ardechoise.png
